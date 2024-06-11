@@ -5,7 +5,7 @@ const employee = {
 
 function updateEmployeeWithKeyAndValue(employee, streetAddress,) {
     const copyEmployee = { ...employee};
-    copyEmployee[streetAddress] = `11 Broadway`;
+    copyEmployee.streetAddress = `11 Broadway`;
     return copyEmployee;
 }
 
@@ -16,7 +16,7 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, streetAddress,) {
 
 function deleteFromEmployeeByKey(employee, name,) {
     const newEmployee = {...employee};
-    newEmployee[name] = undefined;
+    newEmployee.name = undefined;
     return newEmployee;
 }
 
